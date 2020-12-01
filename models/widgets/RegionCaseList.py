@@ -1,18 +1,21 @@
 
 import tkinter as tk
 
-class CaseList():
-    def __init__(self, _):
-        self.scrollbar = tk.Scrollbar(self)
-        self.listbox = tk.Listbox(self, yscrollcommand=self.scrollbar.set)
+import time
 
-        self.scrollbar.pack(side="right", fill=tk.Y)
-        self.listbox.pack(side='left', fill="both")
+class CaseList(tk.Listbox):
+    def __init__(self, parent, *args, **kwargs):
+        
+        self.listbox = tk.Listbox(parent)
+        self.scrollbar = tk.Scrollbar(parent)
+
+        self.scrollbar.pack(side="right", fill="both")
 
         for l in range(20):
             self.listbox.insert(tk.END, "Line number " + str(l+1))
-
     
+        self.listbox.configure(yscrollcommand=self.scrollbar.set)
+        self.scrollbar.config(command=self.listbox.yview)
 
 class RegionCaseList(tk.Frame):
     def __init__(self, parent, *args, **kwargs):
@@ -22,4 +25,4 @@ class RegionCaseList(tk.Frame):
         self.case_list = CaseList(self)
 
         self.title_label.pack()
-        self.case_list.pack(side="left")
+        self.case_list.listbox.pack(side="left")
