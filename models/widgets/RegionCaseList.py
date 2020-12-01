@@ -1,6 +1,5 @@
 
 import tkinter as tk
-
 import time
 
 class CaseList(tk.Listbox):
@@ -13,7 +12,7 @@ class CaseList(tk.Listbox):
 
         for l in range(20):
             self.listbox.insert(tk.END, "Line number " + str(l+1))
-    
+
         self.listbox.configure(yscrollcommand=self.scrollbar.set)
         self.scrollbar.config(command=self.listbox.yview)
 
