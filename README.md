@@ -14,4 +14,4 @@ Covid 19 project
 - https://covidtracking.com/data/api
 
 # Powerpoint
--[Powerpoint](https://docs.google.com/presentation/d/1pJfKrtAgKHVZTj7iE2xhouAOaY-uh-d8dE0RIX3oG2g/edit?usp=sharing)
+[Powerpoint](https://docs.google.com/presentation/d/191mu9mmdgVkrrQAzrCcu-Mv7Z5qHvEDpcv01D6ytaVM/edit?usp=sharing)
