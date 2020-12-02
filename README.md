@@ -1,9 +1,9 @@
 # pandemus
 Covid 19 project
-
 # Done
 - total cases are displayed
 - graph is displaying properly
+- add tabs?
 
 # To do 
 - Graph whole country
