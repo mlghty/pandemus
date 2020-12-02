@@ -3,12 +3,16 @@ Covid 19 project
 
 # Done
 - total cases are displayed
+- graph is displaying properly
 
 # To do 
 - Graph whole country
 - Cases by state with total case numbers, bottom left
 - fixes some code
 - work on graphs
+- fix format for dates in graph
+- add tree view to bottom left
+- add a date selection for the graph
 
 # Api 
 - https://covidtracking.com/data/api
